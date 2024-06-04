@@ -1,5 +1,11 @@
 # Socket 网络编程实验技术方案
 
+## Get Start
+
+``` bash
+pip install -r requirements.txt
+```
+
 ## 整体设计
 
 - 采用 `logging` 模块来提高服务器的可观测性
