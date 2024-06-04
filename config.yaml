@@ -1,0 +1,21 @@
+server:
+  host: 'localhost'
+  port: 23453
+
+logging:
+  version: 1
+  disable_existing_loggers: False
+  formatters:
+    colored:
+      format: '%(log_color)s%(levelname)s:%(name)s:%(message)s'
+      datefmt: '%Y-%m-%d %H:%M:%S'
+      class: colorlog.ColoredFormatter
+  handlers:
+    console:
+      class: logging.StreamHandler
+      formatter: colored
+  loggers:
+    '':
+      level: DEBUG
+      handlers: [console]
+      propagate: no
